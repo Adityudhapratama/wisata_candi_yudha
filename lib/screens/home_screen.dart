@@ -19,15 +19,15 @@ class _HomeScreenState extends State<HomeScreen> {
       // TODO: 2. Buat body dengan GridView.builder
       body: GridView.builder(
         padding: EdgeInsets.all(8.0),
-          itemCount: candiList.length,
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
-          itemBuilder: (context, index){
-            Candi candi = candiList[index];
-            return ItemCard(
-              candi: candiList[index],
-            );
-          },
-        ),
+        itemCount: candiList.length,
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+        itemBuilder: (context, index){
+          Candi candi = candiList[index];
+          return ItemCard(
+            candi: candiList[index],
+          );
+        },
+      ),
       // TODO: 3. Buat ItemCardsebagai return value dari GridView.builder
     );
   }

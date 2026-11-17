@@ -27,11 +27,11 @@ class _SearchScreenState extends State<SearchScreen> {
           // Padding(padding: padding);
           // TODO: 5. BuatListView hasil pencarian sebagai anak dari Column
           ListView.builder(
-              itemCount: _filteredCandis.length,
-              itemBuilder: (context, index) {
-                final candi = _filteredCandis[index];
-                return Card();
-              },
+            itemCount: _filteredCandis.length,
+            itemBuilder: (context, index) {
+              final candi = _filteredCandis[index];
+              return Card();
+            },
           ),
         ],
       ),
